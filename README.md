@@ -1,4 +1,4 @@
-# Fire-Analysis: Confronting the Growing Threat of Wildfires: Urgent Actions and Impacts
+# The Growing Threat of Wildfires: Urgent Actions and Impacts
 
 ## Project Partners:
 
@@ -35,6 +35,7 @@ ___
 
 #### *Please find more details in the [separate presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.g2815e3fa5e3_0_54) included in this repo.*
 
+
 ### Actionable Steps
 * **Home Fireproofing**: Visit the **[CAL FIRE Ready](https://readyforwildfire.org)** for Wildfire page for tips on using fire-resistant materials and creating defensible spaces around your property.
 * **Grant Opportunities:** Check the **[Grants and Funding page](https://cafiresafecouncil.org/)** to see if you qualify for grants, including those from the **[Marin Wildfire](https://www.marinwildfire.org/)** Prevention Authority.
@@ -70,18 +71,35 @@ ___
 * Python (including but not limited to '**Flask**', '**pdfplumber**', '**stats**, and '**ast**' (the latter was used to process trees of the Python abstract syntax grammar)).
 * SQL 
 * JavaScript
-* To initiate the dynamic visualization using Flask, navigate to Fire-Analysis/MapVisualizations folder, run python app.py, and open the [HTML page](http://127.0.0.1:5000/)
+* To initiate the dynamic visualization using Flask, navigate to Fire-Analysis/MapVisualizations folder, run python app.py, and open the **[HTML page](http://127.0.0.1:5000/)**
 
 ___
 
 ### Repo Structure
-* **Files with codes** have **self-explanatory names** and are available in the [main body of the repo](https://github.com/LegallyNotBlonde/Fire-Analysis).
-* **Files with codes** to create **interactive map and charts** are located in [MapVisualizations](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/MapVisualizations) folder.
+
+* **Files with codes** have **self-explanatory names** and are available in the main body of the repo.
+<p> * Here is the right order to read/execute the files: *
+
+1. ***FirePerimeter_data_extract.ipynb*** - json to extract data from the source and create a map
+2. ***scrapePDFforTables.ipynb*** - pandas code to scrape data from pdf sources into excel files
+3. ***CA_wildfire_data_ETL.ipynb*** extracting data from xls files for 2020-2022
+4. ***cleaning_extracting_data_for_2008-2022.ipynb*** - pandas libraries to extract data for 2008-2019, combine with 2020-2022, clean the data, and check fire distribution
+5. ***USD_Impact_data_ETL.ipynb*** calculates financial impact of fires
+6. ***USD_Impact_data_ETL2.ipynb*** calculates financial impact of fires
+7. ***calculating_key_metrics_for_visualization_pandas.ipynb*** calculates fire numbers, median durations, the number of deaths, and the total damages both by month and by year
+8. ***yearly_kpi_plots.ipynb*** - pandas code to create yearly plots to show fire trends during the analysed period
+9. ***CreateDataBase.ipynb*** create and query SQLite database
+10. ***CombineDataset.ipynb*** merge and analyze county data
+11. ***FireStatsToMapPrep.ipynb*** convert statistical data for map usage
+12. png files are attached to display some graphs in the Readme file.
+
+13.  ***Files with codes*** to create **interactive map and charts** are located in [MapVisualizations](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/MapVisualizations) folder.
+14. ***[Google Slides (PowerPoint) presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)*** contains comprehensive project details, graphs, and **chart analysis in speaker notes**. The accompanying PDF presentation called ***"The_Growing_Threat_of_Wildfires.pdf"*** mirrors the presentation, excluding the speaker notes.
+
 * **[Resources folder](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Resources)** contains original, raw data sets.
 * **[Outputs](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Outputs)** includes transformed data and tables.
 * **[Charts](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Charts)** folder contains various visualization displays.
-* **[Google Slides (PowerPoint) presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)** contains comprehensive project details, graphs, and chart analysis in **speaker notes**. The accompanying **[PDF presentation](https://github.com/LegallyNotBlonde/Fire-Analysis/blob/main/The_Growing_Threat_of_Wildfires.pdf)** mirrors the presentation, excluding the speaker notes.
-* ### *[Link to the interactive visualization](http://127.0.0.1:5000/)*
+
 ___
 
 ### Resources
